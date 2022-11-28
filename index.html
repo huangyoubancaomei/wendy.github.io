@@ -6,6 +6,566 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>品优购商城-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        /*全局定义*/
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+ul li{
+    list-style: none;
+}
+.all{
+    width: 1200px;
+    margin: auto;
+}
+a:hover{
+    color: blueviolet;
+}
+
+/*最上面导航栏样式设置*/
+.top{
+    height: 30.6px;
+    background-color: rgb(229, 229, 229);
+}
+
+.top .box1{
+    position: relative;
+    height: 30.6px;
+    font-size: 12px;
+}
+.top .box2{
+    line-height: 30.6px;
+    position: absolute;
+}
+.box2 .mianfei{
+    color: crimson;
+}
+.top .box3{
+    position: absolute;
+    right: 0px;
+    line-height: 30.6px;
+    
+}
+.top .box3 a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid rgb(169, 169, 169);
+    
+}
+
+/*logo搜索框等*/
+.da1{
+    position: relative;
+    height: 105.5px;
+}
+.pic1{
+    width: 175px;
+    height: 56px;
+    float: left;;
+    margin: 27px 0;
+}
+.da1 .box1{
+    float: left;
+    margin-left: 170px;
+    width: 538px;
+    height: 105.5px;
+}
+.da1 .box1 .shuru{
+    margin: 29px 0 5px 0;
+    width: 450px;
+    height: 30px;
+    border: 1px solid rgb(190, 0, 0);
+}
+.da1 .box1 .anniu{
+    margin: 29px 0 5px 0;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(190, 0, 0);
+    color: white;
+    border: 0px;
+}
+.da1 .box1 a{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.da1 .box2{
+    /**/position: relative;
+    float: right;
+    margin: 29px 0;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(247, 247, 247);
+    font-size: 12px;
+    color: rgb(58, 58, 58);
+}
+.da1 .box2 p{
+    display: inline-block;
+    width: 90px;
+    margin-right: 10px;
+}
+.da1 .box2 picture{
+    
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    /**/position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+/*导航条样式*/
+.oh{
+    height: 47px;
+    width: auto;
+    border-bottom: 1px solid rgb(190, 0, 0);
+}
+.da2{
+    position: relative;
+    width: 1200px;
+    height: 47px;
+}
+.da2 .box1{
+    position: absolute;
+    width: 209px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    background-color: rgb(190, 0, 0);
+    color: white;
+}
+.da2 a{
+    line-height: 47px;
+    padding: 0 30px;
+}
+.da2 .new{
+    margin-left: 30px;
+}
+
+/*banner导航栏*/
+.da3{
+    position: relative;
+    width: 1200px;
+    height: 512.5px;
+}
+.da3 .box1{
+    width: 209px;
+    height: 512.5px;
+    background-color: rgb(224, 0, 0);
+    color: white;
+}
+.da3 .box1 a{
+    position: relative;
+    width: 209px;
+    height: 33px;
+    display: inline-block;
+    text-indent: 1em;
+    line-height: 33px;
+    font-size: 13px;
+    color: white;
+}
+.da3 .box1 a:hover{
+    color: brown;
+    background-color: white;
+}
+.da3 .box1 a .ban{
+    position: absolute;
+    right: 10px;
+}
+
+.da3 .box2{
+    position: absolute;
+    left: 219px;
+    top: 30px;
+    width: 721px;
+    height: 455px;
+    background-image: url(images/图层\ 179.png);
+}
+.da3 .box2 .xiaoyu{
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -12.5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    color: white;
+}
+.da3 .box2 .dayu{
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 696px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    color: white;
+}
+
+.da3 .box3{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 250px;
+    height: 455px;
+    background-color: rgb(255, 255, 255);
+}
+
+.da3 .box3 .kuaibao{
+    width: 250px;
+    height: 164px;
+    font-size: 13px;
+    
+    border: 1px solid rgb(217, 217, 217);
+}
+.box3 .kuaibao .biaoti{
+    
+    width: 250px;
+    height: 34px;
+    border-bottom: 1px dashed rgb(217, 217, 217);
+}
+
+.biaoti h3{
+    display: inline-block;
+    width: 110px;
+    line-height: 34px;
+    
+}
+.biaoti a{
+    display: inline-block;
+    float: right;
+    line-height: 34px;
+}
+
+.box3 .kuaibao ul li{
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box3 .kuaibao .biaoti h3{
+    text-indent: 1em;
+}
+
+.box3 .tubiao{
+    /*background-image: url(images/be4e2b96900c047760ae0a19caa349a.png);*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/*每日推荐开始啦*/
+.box4{
+    margin-top: 20px;
+    height: 163px;
+}
+.box4 .tj{
+    float: left;
+    width: 206px;
+    height: 163px;
+    background-color: rgb(115, 115, 115);
+}
+.box4 .tj a{
+    position: relative;
+    display: block;
+    width: 206px;
+    height: 163px;
+}
+.box4 .tj .img{
+    position: absolute;
+    top: 50%;
+    margin-top: -28.5px;
+    left: 50%;
+    margin-left: -28.5px;
+}
+.box4 .tj .zhezhao{
+    display: none;
+    width: 206px;
+    height: 163px;
+    background-color: rgb(0, 0, 0, .6);
+}
+.box4 .tj a:hover .zhezhao{
+    display: block;
+}
+
+.box4 ul li{
+    float: left;
+    width: 248px;
+    height: 163px;
+    background-color: rgb(238, 238, 238);
+    border-left: 1px solid rgb(201, 201, 201);
+}
+.box4 ul li a{
+    display: block;
+    width: 248px;
+    height: 163px;
+
+}
+.box4 .zuo{
+    float: left;
+    margin-left: 10px;
+}
+.box4 ul li a h3{
+    margin-top: 20px;
+}
+.box4 .zuo .jian{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+}
+.box4 ul li a p{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+}
+.box4 .you{
+    float: right;
+    margin: 20px 30px 0 0;
+}
+
+/*<!--产品模组开始啦*/
+.box5{
+    margin-top: 30px;
+    height: 45px;
+    border-bottom: 1px solid rgb(190, 0, 0);
+}
+.box5 h2{
+    float: left;
+}
+.box5 .aa{
+    float: right;
+    margin-bottom: 0px;
+}
+.box5 a{
+    
+    padding: 0 10px;
+    border-right: 1px solid rgb(164, 164, 164);
+}
+.box5 .liwai{
+    border-right: 0px solid rgb(164, 164, 164);
+}
+
+.box6{
+    height: 360px;
+}
+.box6 .zuo1{
+    float: left;
+    width: 209px;
+    height: 360px;
+    background-color: rgb(246, 246, 246);
+}
+.box6 ul li{
+    display: inline-block;
+}
+.box6 ul li a{
+    display: block;
+    margin-left: 5px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding: 0 15px;
+}
+.box6 .zuo1 .xia{
+    width: 160px;
+    margin: 10px auto;  
+}
+.box6 .zuo2{
+    float: left;
+    position: relative;
+    width: 329px;
+    height: 360px;
+    background-color: rgb(174, 214, 216);
+}
+.box6 .zuo2 h3{
+    display: block;
+    margin: 30px 10px;
+    text-indent: 1em;
+}
+.box6 .zuo2 .img{
+    width: 217px;
+    margin: 0 auto;
+}
+.box6 .zuo2 ul{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -18.075px;
+}
+.box6 .zuo2 ul li{
+    font-size: 50px;
+    color: rgb(113, 113, 113);
+}
+
+.box6 .zuo2 ul .col{
+    color: white;
+}
+
+.box6 .you1{
+    float: left;
+    width: 211px;
+    height: 360px;
+    border: 1px solid rgb(240, 240, 240);
+}
+.box6 .you1 h3{
+    display: block;
+    margin: 0px 10px 0 10px;
+    text-indent: 12px;
+}
+.box6 .you1 p{
+    display: block;
+    margin: 5px 10px 0 10px;
+    text-indent: 12px;
+    color: rgb(212, 0, 0);
+}
+.box6 .you1 a{
+    display: block;
+    position: relative;
+    width: 211px;
+    height: 180px;
+    margin-top: 0;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+/**.box6 .you1 .tu{
+    
+    width: 221px;
+    height: 180px;
+    
+}**/
+.box6 .you1 img{
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+
+.box6 .you2{
+   float: left;
+   width: 238px;
+   height: 360px; 
+   margin-left: -1px;
+   border: 1px solid rgb(240, 240, 240);
+}
+.box6 .you2 h2{
+    display: block;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+.box6 .you2 p{
+    text-align: center;
+    color: rgb(154, 154, 154);
+}
+.box6 .you2 .img{
+    display: block;
+    margin: 90px auto;
+}
+.zanzhu{
+    margin-top: 30px;
+}
+
+
+/*网页底部声明样式*/
+.bottom{
+    margin-top: 30px;
+    height: 417px;
+    background-color: rgb(243, 243, 243);
+}
+.box7{
+
+}
+.box7 .shang{
+    height: 110px;
+    width: 1200px;
+}
+.box7 .shang ul li{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 110px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.box7 .shang .img1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -24.5px;
+}
+.box7 .shang .img2{
+    position: absolute;
+    left: 12.25px;
+    top: 50%;
+    margin-top: -12px;
+}
+.box7 .shang .wenzi{
+    position: absolute;
+    left: 60px;
+    top: 32.5px;
+    color: rgb(146, 146, 146);
+}
+.box7 .zhong{
+    float: left;
+    height: 188px;
+    width: 200px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.box7 .zhong h3{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.box7 .zhong ul{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.box7 .zhong #ti{
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
+}
+.box7 .zhong .img{
+    display: block;
+    margin: 10px auto;
+}
+.box7 .xia{
+    float: left;
+    width: 1200px;
+    height: 120px;
+}
+.box7 .xia .diva{
+    width: 1040px;
+    height: 20px;
+    margin: 10px auto;
+}
+.box7 .xia .diva a{
+    padding: 0 5px;
+    border-right: 1px solid rgb(195, 195, 195);
+}
+.box7 .xia .diva .wu{
+    border-right: 0px solid rgb(195, 195, 195);
+}
+.box7 .xia p{
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+    text-align: center;
+}
+    </style>
 </head>
 <body>
     <!--最上方栏目-->
